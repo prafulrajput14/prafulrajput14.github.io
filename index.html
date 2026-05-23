@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praful Kumar | Full-Stack Developer & Security Trainee Portfolio</title>
+  <meta name="description" content="Portfolio of Praful Kumar, a B.Tech Computer Science and Engineering student at GLA University. Full-Stack Developer specializing in Python, React, FastAPI, MongoDB, and Software Security.">
+  <meta name="keywords" content="Praful Kumar, Portfolio, Full Stack Developer, GLA University, Python, FastAPI, React, Software Security, Bijnor, Mathura, Uttar Pradesh">
+  <meta name="author" content="Praful Kumar">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Praful Kumar | Full-Stack Developer Portfolio">
+  <meta property="og:description" content="B.Tech Computer Science & Engineering student at GLA University. Check out my projects CivicAI and AI-Powered Job Aggregator.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode"> <!-- Defaulting to Dark Mode, user can toggle -->
+
+  <!-- Header & Navigation -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo" id="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Praful Kumar</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact Me</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <!-- Theme Toggle Switch -->
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        
+        <!-- Mobile Menu Hamburguer -->
+        <button id="mobile-menu-toggle" class="hamburger-btn" aria-label="Open navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container container">
+        <div class="hero-content reveal">
+          <h1 class="hero-title">
+            Hi all, I'm Praful <span class="wave-emoji">👋</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            I'm a <span id="typewriter-text"></span>
+          </h2>
+          <p class="hero-description">
+            A passionate Full-Stack Software Developer and Security Trainee, engineering secure, scalable web applications with Python, FastAPI, and React. Eager to solve challenging problems and build intuitive, high-performance user experiences.
+          </p>
+          
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="https://github.com/prafulrajput14" target="_blank" rel="noopener noreferrer" class="social-icon github" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/praful-kumar-8611b426b/" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+          
+          <!-- Hero Actions -->
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary" id="btn-contact">Contact Me</a>
+            <button class="btn btn-outline" id="btn-resume-download">Download Resume</button>
+          </div>
+        </div>
+        
+        <div class="hero-image reveal">
+          <div class="profile-frame">
+            <img src="assets/profile_avatar.png" alt="Praful Kumar Portrait" class="profile-img">
+            <div class="profile-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        
+        <div class="skills-layout">
+          <!-- Left: Typing Developer Animation SVG -->
+          <div class="skills-animation-side reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%" class="dev-typing-svg">
+              <!-- Desk line -->
+              <line x1="50" y1="400" x2="520" y2="400" stroke="#334155" stroke-width="6" stroke-linecap="round" />
+              
+              <!-- Sleeping Cat under the desk -->
+              <g class="sleeping-cat">
+                <path d="M100 400 C 100 355, 170 355, 170 400 Z" fill="#2e1065" />
+                <circle cx="105" cy="385" r="15" fill="#2e1065" />
+                <polygon points="94 372, 99 376, 102 368" fill="#2e1065" />
+                <polygon points="112 372, 108 376, 106 368" fill="#2e1065" />
+                <path class="cat-tail" d="M165 398 C 180 398, 190 385, 185 375" fill="none" stroke="#2e1065" stroke-width="5" stroke-linecap="round" />
+                <!-- Sleeping eyes -->
+                <path d="M97 387 Q 100 390 103 387" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" />
+                <path d="M107 387 Q 110 390 113 387" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" />
+                <!-- Sleeping bowl -->
+                <ellipse cx="205" cy="396" rx="12" ry="4" fill="#6b21a8" />
+              </g>
+              
+              <!-- Office Chair -->
+              <g class="chair">
+                <path d="M430 400 L430 260 C430 200, 480 180, 470 280" fill="none" stroke="#6b7280" stroke-width="8" stroke-linecap="round" />
+                <rect x="455" y="230" width="10" height="90" rx="5" fill="#ffffff" />
+                <rect x="330" y="325" width="120" height="10" rx="5" fill="#ffffff" />
+                <line x1="390" y1="335" x2="390" y2="430" stroke="#4b5563" stroke-width="8" />
+                <line x1="350" y1="430" x2="430" y2="430" stroke="#4b5563" stroke-width="6" stroke-linecap="round" />
+                <line x1="390" y1="430" x2="410" y2="415" stroke="#4b5563" stroke-width="6" stroke-linecap="round" />
+              </g>
+              
+              <!-- Desk Table Leg -->
+              <line x1="170" y1="400" x2="170" y2="290" stroke="#4b5563" stroke-width="12" stroke-linecap="round" />
+              <line x1="170" y1="290" x2="340" y2="290" stroke="#4b5563" stroke-width="12" stroke-linecap="round" />
+              
+              <!-- Developer Character -->
+              <g class="character">
+                <!-- Legs -->
+                <path d="M340 330 L280 330 L280 430" fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M365 330 L310 330 L310 430" fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+                <!-- Shoes -->
+                <path d="M280 430 L245 430" stroke="#a855f7" stroke-width="14" stroke-linecap="round" />
+                <path d="M310 430 L275 430" stroke="#a855f7" stroke-width="14" stroke-linecap="round" />
+                
+                <!-- Torso / Jacket (Purple) -->
+                <path d="M405 190 L415 330 L350 330 Z" fill="#7c3aed" />
+                <path d="M405 190 C390 160, 440 160, 430 190 Z" fill="#7c3aed" />
+                
+                <!-- Head -->
+                <circle cx="410" cy="140" r="20" fill="#f59e0b" />
+                <!-- Hair (Black) -->
+                <path d="M392 140 C392 110, 428 110, 428 145 C418 140, 400 140, 392 140 Z" fill="#111827" />
+                
+                <!-- Sleeve / Arm (Typing action) -->
+                <path d="M390 210 L305 250" stroke="#4c1d95" stroke-width="22" stroke-linecap="round" />
+                <!-- Hand left (typing animation) -->
+                <path class="hand-left" d="M305 250 L235 253" stroke="#f59e0b" stroke-width="12" stroke-linecap="round" />
+                <!-- Hand right (typing animation) -->
+                <path class="hand-right" d="M305 250 L250 251" stroke="#f59e0b" stroke-width="12" stroke-linecap="round" />
+              </g>
+              
+              <!-- Laptop -->
+              <g class="laptop">
+                <line x1="170" y1="284" x2="270" y2="284" stroke="#9ca3af" stroke-width="6" stroke-linecap="round" />
+                <line x1="170" y1="284" x2="135" y2="190" stroke="#9ca3af" stroke-width="6" stroke-linecap="round" />
+                <line class="screen-line" x1="138" y1="198" x2="155" y2="248" stroke="#f59e0b" stroke-width="2" opacity="0.8" />
+                <line class="screen-line-2" x1="148" y1="203" x2="162" y2="253" stroke="#06b6d4" stroke-width="2" opacity="0.8" />
+              </g>
+              
+              <!-- Floating Coding speech bubble -->
+              <g class="speech-bubble-group">
+                <path d="M210 110 C210 75, 150 75, 150 110 C150 128, 163 136, 171 140 L167 156 L189 140 C210 140, 210 123, 210 110 Z" fill="#ddd6fe" />
+                <text x="180" y="116" fill="#6d28d9" font-family="monospace" font-size="16" font-weight="bold" text-anchor="middle">&lt;/&gt;</text>
+              </g>
+            </svg>
+          </div>
+          
+          <!-- Right: Title, Subtitle, Tech Grid, Bullets -->
+          <div class="skills-info-side reveal">
+            <h2 class="skills-main-title">What I do</h2>
+            <p class="skills-main-sub">CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK</p>
+            
+            <div class="tech-icons-grid">
+              <!-- HTML5 -->
+              <div class="tech-icon-card" title="HTML5">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm17.3 5.8H7l.2 2.5h11.2l-.3 3.8H7.5l.2 2.5h7.2l-.4 4.2-2.5.8-2.5-.8-.2-1.8H7.2l.3 3.8 4.5 1.5 4.5-1.5 1.1-12.5z"/></svg>
+                <span>html-5</span>
+              </div>
+              
+              <!-- CSS3 -->
+              <div class="tech-icon-card" title="CSS3">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm17 5.8h-11l.2 2.5h8.6l-.3 3.8H7.9l.2 2.5h6l-.4 4.2-1.7.5-1.7-.5-.2-1.8H8.1l.3 3.8 3.6 1.1 3.6-1.1.9-10.5h.3z"/></svg>
+                <span>css3</span>
+              </div>
+
+              <!-- Sass -->
+              <div class="tech-icon-card" title="Sass">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.176 17.065c-.886.634-2.148.974-3.551.974-3.328 0-4.66-2.144-4.66-4.529 0-3.376 2.37-5.59 5.344-5.59 1.633 0 2.87.596 3.612 1.341l-1.503 1.528c-.521-.497-1.196-.867-2.073-.867-1.745 0-2.923 1.341-2.923 3.491 0 1.458.749 2.593 2.569 2.593.743 0 1.42-.167 1.838-.458v-1.63h-1.838v-2.02h3.847l-.115 5.168z"/></svg>
+                <span>sass</span>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="tech-icon-card" title="JavaScript">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.376c-.186-.77-.52-1.256-1.134-1.632-.507-.312-1.218-.519-2.253-.615-.815-.078-1.074-.184-1.228-.326-.14-.131-.22-.353-.22-.619 0-.441.353-.732.906-.732.484 0 .806.182 1.033.568.125.218.172.585.172.937h2.093c0-.623-.092-1.178-.309-1.62-.353-.746-1.08-1.258-2.217-1.42-.48-.069-1.08-.078-1.554-.015-1.428.188-2.308.971-2.308 2.21 0 1.256.764 1.95 2.52 2.164 1.157.14 1.488.293 1.61.47.164.242.188.586.062.836-.188.383-.711.586-1.375.586-.883 0-1.42-.375-1.594-1.094-.062-.258-.094-.656-.094-1.125H12c0 .883.094 1.54.344 2.055.438.89 1.438 1.344 2.875 1.344 1.703 0 2.898-.75 2.922-2.148.016-.399-.055-.782-.107-1.011zm-13.882-.23c-.156-.375-.328-.593-.687-.718-.282-.094-.766-.125-1.219-.125-.797 0-1.125.172-1.25.438-.11.234-.125.438-.125.969 0 .828.328 1.156 1.25 1.156.719 0 1.094-.281 1.25-.969.062-.281.062-.875.062-1.031v.281zm.218-4.235H10.5v8.25c0 1.406-.406 2.375-1.281 2.859-.578.328-1.375.453-2.281.391-1.359-.094-2.281-.625-2.656-1.609-.234-.61-.25-1.25-.234-2.11h2.156c-.015.656.031.984.172 1.25.188.359.578.531 1.125.531.625 0 .969-.266 1.078-.828.063-.313.063-.984.063-1.625v-7.118z"/></svg>
+                <span>JavaScript</span>
+              </div>
+
+              <!-- ReactJS -->
+              <div class="tech-icon-card" title="ReactJS">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="12" rx="11" ry="4.2"/><ellipse cx="12" cy="12" rx="11" ry="4.2" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="11" ry="4.2" transform="rotate(120 12 12)"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg>
+                <span>reactjs</span>
+              </div>
+
+              <!-- NodeJS -->
+              <div class="tech-icon-card" title="NodeJS">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 1.344L1.732 7.272v11.856L12 25.056l10.268-5.928V7.272L12 1.344zm8.66 16.512L12 22.848l-8.66-5v-10l8.66-5 8.66 5v10zm-3.66-5.832a.5.5 0 0 0-.5-.5h-2v-2a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v2h-2a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2h2a.5.5 0 0 0 .5-.5v-2z"/></svg>
+                <span>nodejs</span>
+              </div>
+
+              <!-- MongoDB -->
+              <div class="tech-icon-card" title="MongoDB">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 0c-.3 0-.6.1-.8.3C10 1.5 6 7 6 12.5c0 4.1 2.8 7.5 6 7.5s6-3.4 6-7.5C18 7 14 1.5 12.8.3c-.2-.2-.5-.3-.8-.3zm0 2.5c2.3 3.5 4 7 4 10 0 2.2-1.8 4-4 4s-4-1.8-4-4c0-3 1.7-6.5 4-10zM12 20v4h2v-4h-2z"/></svg>
+                <span>mongodb</span>
+              </div>
+
+              <!-- Swift -->
+              <div class="tech-icon-card" title="Swift">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M23.336 15.65c-.092-.128-2.613-3.676-5.918-4.908.01-.064.01-.132.01-.197 0-3.327-2.316-6.196-5.59-6.732.228.328.43.684.6 1.066.862 1.94 1.05 4.148.555 6.03a11.196 11.196 0 0 1-2.096-4.5c.038.566.02 1.15-.058 1.737-.215 1.637-.965 3.125-2.09 4.316-.07.073-.135.148-.204.22-.057-.148-.11-.295-.152-.444-.393-1.378-.4-2.833-.053-4.22.046.223.104.444.175.66.388 1.168 1.052 2.217 1.933 3.067-1.127.172-2.28.167-3.418-.046-.02-.003-.038-.008-.057-.012.39.262.812.49 1.258.675 2.193.913 4.673.914 6.892.052-1.92.93-4.045 1.503-6.273 1.597.525.022 1.06-.017 1.596-.123C9.07 18.775 5.586 17.65 2.91 14.887c2.315 2.6 5.64 4.093 9.176 4.173-2.062.81-4.304 1.062-6.526.71 4.544 2.1 9.873.742 12.984-3.08a8.312 8.312 0 0 0 4.792-1.04"/></svg>
+                <span>swift</span>
+              </div>
+
+              <!-- npm -->
+              <div class="tech-icon-card" title="npm">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M0 0v24h24V0H0zm18.3 18.3H15v-9h-3v9H5.7V5.7h12.6v12.6z"/></svg>
+                <span>npm</span>
+              </div>
+
+              <!-- SQL Database -->
+              <div class="tech-icon-card" title="SQL Database">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c-5.5 0-10 1.5-10 3s4.5 3 10 3 10-1.5 10-3-4.5-3-10-3z"/><path d="M2 6v6c0 1.5 4.5 3 10 3s10-1.5 10-3v-6"/><path d="M2 12v6c0 1.5 4.5 3 10 3s10-1.5 10-3v-6"/></svg>
+                <span>sql-database</span>
+              </div>
+
+              <!-- AWS -->
+              <div class="tech-icon-card" title="AWS">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M14.7 15.6c-.7.5-1.6.8-2.6.8-2.4 0-4.1-1.6-4.1-4.2 0-2.8 1.9-4.3 4.3-4.3 1 0 1.8.3 2.4.7V6c0-1.2-.5-1.9-1.8-1.9-1 0-2.1.5-2.8.9l-.7-1.6C10.5 2.7 12 2.2 13.5 2.2c2.4 0 3.7 1.2 3.7 3.9v7.9c0 .9.1 1.7.3 2.2h-2.2l-.6-.6zm-1.8-4.7c-1.3 0-2.2.7-2.2 2.2s.8 2.2 2.1 2.2c.8 0 1.5-.4 1.9-.9v-2.7c-.5-.5-1.1-.8-1.8-.8zm7.5 4.7h-2.4V8.4c0-.9-.3-1.4-1.1-1.4-.7 0-1.3.4-1.7.8v7.8H13V8.4c0-.9-.3-1.4-1.1-1.4-.7 0-1.3.4-1.7.8v7.8H7.8V8.4c0-.9-.3-1.4-1.1-1.4-.7 0-1.3.4-1.7.8v7.8H2.6V8.4c0-2.1 1.2-3.1 3.2-3.1.9 0 1.8.3 2.4.9.5-.6 1.3-.9 2.2-.9.9 0 1.8.4 2.3.9.5-.6 1.3-.9 2.2-.9 2 0 3.2 1.1 3.2 3.1v6.2h.3zM12 18.2c-5.8 2.8-11.4 1.4-11.4 1.4s5-.5 8.9-3.2c1-.7 2.2-2.1 2.5-1.8.4.3.4 1.8 0 3.6z"/></svg>
+                <span>aws</span>
+              </div>
+
+              <!-- Firebase -->
+              <div class="tech-icon-card" title="Firebase">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M3.89 15.75L1.15 10.9a.83.83 0 0 1 .1-.93l1.24-1.42 1.4 7.2m14.96-.06l-1.37-7.2 1.22 1.42a.85.85 0 0 1 .1.93l-2.7 4.85M12.44 2.8a.86.86 0 0 0-.88 0L2.73 8.35l.08.38 8.75-8.1a.83.83 0 0 1 .88 0l8.76 8.1.08-.38L12.44 2.8zM12 5.5l-2.64 5.03L12 6.55l2.64 3.98L12 5.5zm.44 15.7l6.63-11.95-6.63 6.13a.83.83 0 0 1-.88 0L4.93 9.25l6.63 11.95a.83.83 0 0 0 .88 0z"/></svg>
+                <span>firebase</span>
+              </div>
+
+              <!-- Python -->
+              <div class="tech-icon-card" title="Python">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M14.25.18c.9 0 1.66.72 1.66 1.62v1.6h-3.32c-.9 0-1.63.73-1.63 1.62v1.65H8.3a1.65 1.65 0 0 0-1.66 1.63v3.3H5a1.65 1.65 0 0 0-1.66 1.62v2.48c0 .9.75 1.63 1.66 1.63h1.64v-1.65c0-.9.73-1.62 1.64-1.62h3.31V9.92h2.64c.9 0 1.63-.73 1.63-1.63V4.98h1.66c.9 0 1.66-.72 1.66-1.62V1.8a1.62 1.62 0 0 0-1.66-1.62h-4.97zM9.9 8.27v1.66H6.6c-.9 0-1.63.73-1.63 1.63V14.9H1.66c-.9 0-1.66-.73-1.66-1.63V10.8c0-.9.75-1.63 1.66-1.63h3.31V7.5c0-.9.73-1.63 1.64-1.63H9.9v2.4z"/></svg>
+                <span>python</span>
+              </div>
+
+              <!-- Docker -->
+              <div class="tech-icon-card" title="Docker">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M13.983 11.078h2.119c.102 0 .186-.084.186-.186V8.774c0-.102-.084-.186-.186-.186h-2.119c-.102 0-.186.084-.186.186v2.118c0 .102.084.186.186.186zm-2.95.808h2.118c.102 0 .186-.084.186-.186V9.584c0-.102-.084-.186-.186-.186h-2.119c-.102 0-.186.084-.186.186v2.118c0 .102.084.186.186.186zm0-2.949h2.118c.102 0 .186-.084.186-.186V6.634c0-.102-.084-.186-.186-.186h-2.119c-.102 0-.186.084-.186.186v2.118c0 .102.084.186.186.186zm-2.95 3.757h2.119c.102 0 .186-.084.186-.186v-2.118c0-.102-.084-.186-.186-.186H8.083c-.102 0-.186.084-.186.186v2.118c0 .102.084.186.186.186zm0-2.949h2.119c.102 0 .186-.084.186-.186V9.584c0-.102-.084-.186-.186-.186H8.083c-.102 0-.186.084-.186.186v2.118c0 .102.084.186.186.186zm0-2.95h2.119c.102 0 .186-.084.186-.186V6.634c0-.102-.084-.186-.186-.186H8.083c-.102 0-.186.084-.186.186v2.118c0 .102.084.186.186.186zm-2.95 5.899h2.119c.102 0 .186-.084.186-.186v-2.118c0-.102-.084-.186-.186-.186H5.133c-.102 0-.186.084-.186.186v2.118c0 .102.084.186.186.186zm0-2.949h2.119c.102 0 .186-.084.186-.186V9.584c0-.102-.084-.186-.186-.186H5.133c-.102 0-.186.084-.186.186v2.118c0 .102.084.186.186.186zm-2.95 2.949h2.119c.102 0 .186-.084.186-.186v-2.118c0-.102-.084-.186-.186-.186H2.183c-.102 0-.186.084-.186.186v2.118c0 .102.084.186.186.186zM23.99 12.3c-.02-.153-.339-.997-.932-1.748-.686-.867-1.466-1.127-1.763-1.168-1.525-.212-2.763.856-3.44 1.432-.093.076-.178.161-.263.237v-2.28c0-.102-.084-.186-.186-.186h-2.119c-.102 0-.186.084-.186.186v4.618c-.017.017-.034.034-.051.051-.627.619-1.898 1.83-3.737 1.83H4.8c-.805 0-1.805-.331-2.458-.898-.22-.195-.127-.585.161-.585h9.195c.102 0 .186-.084.186-.186v-2.12c0-.102-.084-.186-.186-.186H.482c-.398 0-.61.474-.33.754.915.915 2.22 1.636 3.992 1.636h8.771c3.136 0 5.483-2.161 6.644-3.525.076-.093.161-.178.237-.263.458-.339 1.136-.788 1.958-.788.085 0 .229.008.432.034.458.051.898.373 1.195.746.347.432.534.958.551 1.483.051 1.432-.695 2.653-2.237 3.636-.22.144-.144.508.11.508h1.169c1.686 0 2.95-.992 3.017-3.008z"/></svg>
+                <span>docker</span>
+              </div>
+            </div>
+            
+            <div class="skills-bullets">
+              <div class="bullet-item">
+                <div class="bullet-icon">⚡</div>
+                <div class="bullet-text">Develop highly interactive Front end / User Interfaces for your web and mobile applications</div>
+              </div>
+              <div class="bullet-item">
+                <div class="bullet-icon">⚡</div>
+                <div class="bullet-text">Progressive Web Applications ( PWA ) in normal and SPA Stacks</div>
+              </div>
+              <div class="bullet-item">
+                <div class="bullet-icon">⚡</div>
+                <div class="bullet-text">Integration of third party services such as Firebase/ AWS / Digital Ocean</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proficiency Section (DeveloperFolio Signature Feature) -->
+        <div class="proficiencies-container reveal">
+          <h3 class="proficiency-title">Proficiency</h3>
+          <div class="proficiency-grid">
+            <div class="prof-item">
+              <div class="prof-label">
+                <span>Frontend Development</span>
+                <span>80%</span>
+              </div>
+              <div class="prof-bar"><div class="prof-progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="prof-item">
+              <div class="prof-label">
+                <span>Backend Development & APIs</span>
+                <span>85%</span>
+              </div>
+              <div class="prof-bar"><div class="prof-progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="prof-item">
+              <div class="prof-label">
+                <span>Programming (Python, Java, JS)</span>
+                <span>90%</span>
+              </div>
+              <div class="prof-bar"><div class="prof-progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="prof-item">
+              <div class="prof-label">
+                <span>Databases (MongoDB, SQL)</span>
+                <span>75%</span>
+              </div>
+              <div class="prof-bar"><div class="prof-progress" style="width: 75%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+      <div class="container">
+        <h2 class="section-title reveal">Education</h2>
+        <div class="education-card reveal">
+          <div class="edu-header">
+            <div class="edu-logo">
+              <!-- GLA Logo placeholder / SVG Graphic -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="edu-icon"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+            </div>
+            <div class="edu-title-block">
+              <h3 class="edu-school">GLA University</h3>
+              <p class="edu-location">Mathura, Uttar Pradesh</p>
+            </div>
+            <div class="edu-date-block">
+              <span class="edu-date">August 2023 – June 2027 (Expected)</span>
+            </div>
+          </div>
+          <div class="edu-body">
+            <h4 class="edu-degree">Bachelor of Technology (B.Tech) – Computer Science and Engineering</h4>
+            <p class="edu-details">
+              Focusing on Computer Science Fundamentals including Data Structures and Algorithms (DSA), Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems, and Computer Networks. Trainee in Job-Oriented Value-Added courses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <h2 class="section-title reveal">Work Experience & Training</h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="experience-card">
+                <div class="exp-header">
+                  <div class="exp-title-block">
+                    <h3 class="exp-role">Software Security Trainee</h3>
+                    <h4 class="exp-company">GLA University <span class="exp-badge">Value-Added Course</span></h4>
+                  </div>
+                  <div class="exp-date-block">
+                    <span class="exp-date">June 2025 – July 2025</span>
+                    <span class="exp-location">Mathura, UP</span>
+                  </div>
+                </div>
+                <div class="exp-body">
+                  <ul class="exp-bullets">
+                    <li>Researched and implemented key mitigations for common web vulnerabilities including SQL Injection, Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF).</li>
+                    <li>Conducted comprehensive web application vulnerability assessments and documented security findings with actionable remediation steps, applying OWASP Top 10 security guidelines.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        
+        <div class="projects-grid">
+          <!-- CivicAI -->
+          <div class="project-card reveal">
+            <div class="project-image-wrapper">
+              <img src="assets/civic_ai_mockup.png" alt="CivicAI Project Screenshot" class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://civic-ai-2yyx.vercel.app/login" target="_blank" rel="noopener noreferrer" class="proj-link-btn" title="Live Site">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <div class="project-header">
+                <h3 class="project-name">CivicAI</h3>
+                <span class="project-date">Jan 2026 – Feb 2026</span>
+              </div>
+              <p class="project-description">
+                A full-stack AI-powered chatbot application with intelligent link parsing and context-aware query handling. Resolves citizen queries in real-time with an AI engine and features a lightweight interactive user portal.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">ReactJS</span>
+                <span class="stack-tag">FastAPI</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">MongoDB</span>
+                <span class="stack-tag">REST API</span>
+                <span class="stack-tag">Vercel</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://civic-ai-2yyx.vercel.app/login" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Job Aggregator -->
+          <div class="project-card reveal">
+            <div class="project-image-wrapper">
+              <img src="assets/job_aggregator_mockup.png" alt="AI Job Aggregator Project Screenshot" class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://ai-job-aggregator-thzt.vercel.app/" target="_blank" rel="noopener noreferrer" class="proj-link-btn" title="Live Site">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <div class="project-header">
+                <h3 class="project-name">AI-Powered Job Aggregator</h3>
+                <span class="project-date">Jan 2026 – Feb 2026</span>
+              </div>
+              <p class="project-description">
+                A scalable job aggregation platform that automatically scrapes, collects, and consolidates job listings. Features custom keyword filtering, date sorting, background scheduling, and optimized database queries.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">ReactJS</span>
+                <span class="stack-tag">FastAPI</span>
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">Scraping</span>
+                <span class="stack-tag">Caching</span>
+                <span class="stack-tag">Vercel</span>
+                <span class="stack-tag">Render</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://ai-job-aggregator-thzt.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Certifications -->
+    <section id="achievements" class="achievements-section">
+      <div class="container">
+        <h2 class="section-title reveal">Achievements & Certifications</h2>
+        
+        <div class="achievements-grid">
+          <!-- LeetCode Card -->
+          <div class="achievement-card reveal">
+            <div class="ach-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.414l-9.77 9.77a.62.62 0 0 0-.075.071L.414 12.54a1.374 1.374 0 0 0 0 1.946l2.12 2.12a1.374 1.374 0 0 0 1.947 0l2.28-2.281a.631.631 0 0 0 .073-.072l9.766-9.766a1.375 1.375 0 0 0 0-1.947L14.444.414A1.373 1.373 0 0 0 13.483 0zm-.03 2.12l1.947 1.946L5.633 13.834l-1.947-1.946L13.453 2.12zm-8.47 12.53a.733.733 0 0 1-1.036 0l-1.04-1.04a.733.733 0 0 1 0-1.036l1.04-1.04 2.076 2.076-1.04 1.04zM22.25 10.187a.5.5 0 0 0-.353.146l-4.544 4.544a.5.5 0 0 0 .353.854h4.544a.5.5 0 0 0 .5-.5v-4.544a.5.5 0 0 0-.5-.5z"/></svg>
+            </div>
+            <h3 class="ach-title">LeetCode Competitive Programming</h3>
+            <p class="ach-description">
+              Solved <strong>300+ Data Structures and Algorithms (DSA)</strong> problems, demonstrating strong analytical thinking, optimal logic building, and active coding consistency.
+            </p>
+            <div class="ach-footer">
+              <a href="https://leetcode.com/u/prafulrajput_14/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">View Profile</a>
+            </div>
+          </div>
+
+          <!-- Hackathon Card -->
+          <div class="achievement-card reveal">
+            <div class="ach-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"/><path d="M12 2a4 4 0 0 1 4 4v8H8V6a4 4 0 0 1 4-4Z"/></svg>
+            </div>
+            <h3 class="ach-title">GeekVerse 1.0 Hackathon</h3>
+            <p class="ach-description">
+              Participated as a key developer, building <strong>SpeciFit</strong>, a fitness-focused full-stack web application within competitive hackathon time constraints. Developed rapid prototyping.
+            </p>
+            <span class="ach-date">January 2025</span>
+          </div>
+
+          <!-- Certifications Card -->
+          <div class="achievement-card reveal">
+            <div class="ach-badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="ach-title">NPTEL Online Certifications</h3>
+            <p class="ach-description">
+              Completed professional certifications from <strong>IIT Kharagpur</strong> and <strong>IIT Madras</strong> in core Computer Science domains, validating command over primary computing fundamentals.
+            </p>
+            <span class="ach-date">2025 – 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reach Out to me! / Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-layout-split reveal">
+          <!-- Left Content -->
+          <div class="contact-text-side">
+            <h2 class="contact-main-heading">Reach Out to me!</h2>
+            <p class="contact-main-sub">DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</p>
+            
+            <div class="contact-meta-info">
+              <!-- Location pin -->
+              <div class="contact-meta-item">
+                <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="meta-text">Bijnor, Uttar Pradesh</span>
+              </div>
+
+              <!-- Phone number -->
+              <div class="contact-meta-item">
+                <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+918630356281" class="meta-text meta-link">+91 8630356281</a>
+              </div>
+              
+              <!-- Open for opportunities -->
+              <div class="contact-meta-item">
+                <span class="opportunity-dot"></span>
+                <span class="meta-text">Open for opportunities: <strong>Yes</strong></span>
+              </div>
+            </div>
+
+            <!-- Social badges in image format -->
+            <div class="contact-social-badges">
+              <!-- GitHub -->
+              <a href="https://github.com/prafulrajput14" target="_blank" rel="noopener noreferrer" class="badge-circle github-badge" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/praful-kumar-8611b426b/" target="_blank" rel="noopener noreferrer" class="badge-circle linkedin-badge" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <!-- Email -->
+              <a href="mailto:prafulkumar1401@gmail.com" class="badge-circle email-badge" title="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+              <!-- LeetCode -->
+              <a href="https://leetcode.com/u/prafulrajput_14/" target="_blank" rel="noopener noreferrer" class="badge-circle leetcode-badge" title="LeetCode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414 0-1.954l-2.396-2.392c-1.127-1.124-2.887-1.124-4.015 0l-.63.63 2.115 2.116.63-.63c.27-.267.712-.267.982 0l2.396 2.392c.27.27.27.708 0 .977l-2.396 2.392c-.54.54-1.414.54-1.954 0l-4.277-4.193a4.01 4.01 0 0 1-.87-1.272 4.135 4.135 0 0 1-.25-.765 4.225 4.225 0 0 1-.043-1.638 4.15 4.15 0 0 1 .086-.356 3.996 3.996 0 0 1 .918-1.583L9.63 7.558l5.378-5.757a.707.707 0 0 0-.096-1.074.707.707 0 0 0-.486-.289l-.943-.038z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Content (Circular profile photo) -->
+          <div class="contact-photo-side">
+            <div class="contact-photo-frame">
+              <img src="assets/profile_photo.jpg" alt="Praful Kumar Contact Photo" class="contact-avatar-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p class="copyright">© 2026 Praful Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-to-top" class="scroll-top-btn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="currentColor">
+      <path d="M8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5 5 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.6 2.6 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046z"/>
+    </svg>
+  </button>
+
+  <!-- Dynamic Resume Printing Overlay (Hidden by default, used for print-styling layout) -->
+  <div id="print-resume-layout" class="print-only">
+    <div class="print-header">
+      <h1>Praful Kumar</h1>
+      <p>Bijnor, Uttar Pradesh | +91 8630356281 | prafulkumar1401@gmail.com</p>
+      <div class="print-links">
+        <span>LinkedIn: linkedin.com/in/praful-kumar-8611b426b</span>
+        <span>GitHub: github.com/prafulrajput14</span>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-section-title">EDUCATION</h2>
+      <div class="print-item">
+        <div class="print-item-header">
+          <strong>GLA University</strong>
+          <span>Mathura, Uttar Pradesh</span>
+        </div>
+        <div class="print-item-sub">
+          <span>Bachelor of Technology (B.Tech) – Computer Science and Engineering</span>
+          <span>August 2023 – June 2027 (Expected)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-section-title">TECHNICAL SKILLS</h2>
+      <p><strong>Programming Languages:</strong> Java, JavaScript, Python, SQL, HTML, CSS</p>
+      <p><strong>Frameworks & Libraries:</strong> React.js, Node.js, Express.js, FastAPI, MongoDB, MERN Stack</p>
+      <p><strong>Web Development & Tools:</strong> REST API Design, Responsive UI Design, Git, GitHub, Postman, VS Code</p>
+      <p><strong>Cloud & Security:</strong> Vercel, Render, Cloud Computing, OWASP Top 10 Mitigations</p>
+      <p><strong>CS Fundamentals:</strong> Data Structures and Algorithms (DSA), OOP, DBMS, OS, Computer Networks</p>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-section-title">INTERNSHIP AND TRAINING</h2>
+      <div class="print-item">
+        <div class="print-item-header">
+          <strong>GLA University</strong>
+          <span>Mathura, Uttar Pradesh</span>
+        </div>
+        <div class="print-item-sub">
+          <span>Software Security Trainee – Job Oriented Value-Added Course</span>
+          <span>June 2025 – July 2025</span>
+        </div>
+        <ul>
+          <li>Researched and implemented mitigations for common web vulnerabilities including SQL Injection, Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF).</li>
+          <li>Conducted vulnerability assessments and documented findings with actionable remediation steps, applying OWASP Top 10 security guidelines.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-section-title">PROJECTS</h2>
+      <div class="print-item">
+        <div class="print-item-header">
+          <strong>AI-Powered Job Aggregator</strong>
+          <span>Jan 2026 – Feb 2026</span>
+        </div>
+        <div class="print-item-sub">
+          <span>Tech Stack: React, FastAPI, Python, REST API, Vercel, Render</span>
+          <span><a href="https://ai-job-aggregator-thzt.vercel.app/" target="_blank">Live Link</a></span>
+        </div>
+        <ul>
+          <li>Engineered a scalable full-stack job aggregation platform that automatically collects and consolidates job listings from multiple sources, managing opportunities through automated background scraping and database caching.</li>
+          <li>Improved job search efficiency and response time by designing optimized REST APIs using FastAPI and implementing efficient database queries and caching mechanisms for faster job retrieval.</li>
+          <li>Built an intelligent job discovery system with advanced filters (keyword, location, date-posted, and relevance sorting), enabling users to quickly find personalized job opportunities.</li>
+          <li>Developed a responsive user interface with React and deployed the application using cloud platforms Render and Vercel, ensuring scalable access and real-time job updates.</li>
+        </ul>
+      </div>
+
+      <div class="print-item">
+        <div class="print-item-header">
+          <strong>CivicAI</strong>
+          <span>January 2026 – February 2026</span>
+        </div>
+        <div class="print-item-sub">
+          <span>Tech Stack: React.js, FastAPI, Python, REST API, Vercel, MongoDB</span>
+          <span><a href="https://civic-ai-2yyx.vercel.app/login" target="_blank">Live Link</a></span>
+        </div>
+        <ul>
+          <li>Developed a full-stack AI-powered chatbot application with intelligent link parsing and context-aware query handling using Python and FastAPI.</li>
+          <li>Designed scalable REST API endpoints integrated with AI language models to process natural language queries and return structured real-time responses.</li>
+          <li>Built a responsive frontend using React.js and deployed on Vercel, achieving low-latency performance and seamless cross-device experience.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <h2 class="print-section-title">AWARDS AND CERTIFICATIONS</h2>
+      <p><strong>NPTEL Online Certifications (2025 - 2026):</strong> Completed NPTEL certification in Computer Science domain, demonstrating proficiency in core computing concepts from IIT Kharagpur and IIT Madras.</p>
+      <p><strong>GeekVerse 1.0 Hackathon (January 2025):</strong> Developed SpeciFit, a fitness-focused full-stack web application, within competitive hackathon time constraints, showcasing rapid prototyping and teamwork.</p>
+      <p><strong>LeetCode – Competitive Programming:</strong> Solved 300+ Data Structures and Algorithms (DSA) problems, demonstrating strong analytical thinking and coding proficiency. Profile link: leetcode.com/u/prafulrajput_14/</p>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
